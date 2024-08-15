@@ -1,0 +1,1371 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECONOREPUESTOS S.A.S - Lider en repuestos de motocicletas</title>
+    <link rel="stylesheet" href="scss/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <style>
+        .header-top {
+            background-color: #d0d0d0;
+            padding: 10px 0;
+            width: 100%;
+        }
+        .header-bottom {
+            background-color: #ffffff;
+            color: #ffffff;
+            padding: 10px 0;
+            width: 100%;
+        }
+        .header-top .contact-info a {
+            color: #000000;
+            margin-right: 15px;
+            text-decoration: none;
+        }
+        .header-top .contact-info a:hover {
+            color: #b11310;
+        }
+        .header-bottom .navbar-brand img {
+            width: 60px;
+            height: auto;
+        }
+        .header-bottom .navbar-nav .nav-link {
+            color: #b11310;
+        }
+        .header-bottom .navbar-nav .nav-link:hover {
+            color: #000000;
+        }
+        .social-icons a {
+            color: #000000;
+            margin-left: 10px;
+            font-size: 20px;
+        }
+        .social-icons a:hover {
+            color: #b11310;
+        }
+        .navbar-toggler {
+         border-color: #510505; /* Cambia el color del borde del botón */
+        background-color: #343a40; /* Cambia el color de fondo del botón */
+        }
+
+        .h1-encabezado{
+
+            font-size: 4rem;
+            letter-spacing: 6px;
+            
+        }
+
+        .image-container {
+            position: relative;
+            width: 100%;
+            max-width: 1200px; /* Ajusta el tamaño según tus necesidades */
+        }
+        .image-container img {
+            max-width: 2100px;
+            height: auto;
+        }   
+        .full-width-img {
+            width: 100%;
+            height: auto;
+        }
+        .text-overlay {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 4rem;
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+            padding: 50px;
+            border-radius: 5px;
+        }
+        .btn-overlay {
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 2rem;
+            padding: 25px 50px;
+        }
+
+        .effect-threed {
+            position: relative;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        .effect-threed::after {
+            content: "";
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            height: 20px;
+            background-color: rgba(177, 19, 16, 0.7); /* Color #b11310 con transparencia */
+            box-shadow: 0 10px 15px rgba(177, 19, 16, 0.7); /* Sombra 3D con el mismo color */
+            z-index: -1;
+            border-radius: 10px;
+        }
+
+        .general-background{
+            background-color:#d0d0d0;
+        }
+        .container-background{
+            background-color: #f0f0f0;
+        }
+        .content-rect {
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            width: 90%;
+            margin: 0 auto;
+            position: relative;
+            min-height: 450px;
+            margin-bottom: 0;
+            box-shadow: 0 0 20px #3b3b3b;
+            border-radius: 10px;
+        
+        }
+
+        .content-rect-products {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            width: 90%;
+            margin: 0 auto;
+            position: relative;
+            height: auto;
+            box-shadow: 0 0 20px #3b3b3b;
+            border-radius: 10px;
+        }
+
+        .text-container {
+            flex: 1;
+            padding: 40px;
+        }
+        .check-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .main-check {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem; /* Añade espacio entre los elementos */
+            }
+
+        .check-item {
+            display: flex;
+            align-items: center;
+            }   
+
+        .check-icon {
+            margin-right: 0.5rem; /* Espacio entre el icono y el texto */
+            color: #b11310; /* Puedes cambiar el color del icono si lo deseas */
+            }
+        .text-ident-small{
+            text-indent: 2rem;
+        }
+        .images-container {
+            display: flex;
+            position: relative;
+            flex: 1;
+            height: auto;
+            padding: 20px;
+        }
+
+        .image-product-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        .images-container img {
+            position: absolute; /* Posicionamiento absoluto para las imágenes */
+            max-width: 350px;
+            max-height: 350px;
+            box-shadow: 0 4px 8px rgba(255, 4, 4, 0.601); /* Sombra exterior */
+            transition: all 0.3s ease;
+        }
+
+        .image-1 {
+            top: 30px; /* Ajustar según sea necesario */
+            left: 5px; /* Ajustar según sea necesario */
+            
+        }
+
+        .image-2 {
+            top: 210px; /* Ajustar según sea necesario */
+            right: 60px; /* Ajustar según sea necesario */
+            
+        }
+
+        .text-justify {
+            text-align: justify;
+        }
+
+        .card-text{
+            color: #383838;
+        }
+
+        .container {
+            max-width: 1500px; /* Ajusta el tamaño según sea necesario */
+            
+        }
+
+        .row.g-3 {
+            margin-left: -1rem; /* Compensa el espaciado negativo del contenedor de las columnas */
+            margin-right: -1rem;
+        }
+
+        .col-sm-6.col-md-4.col-lg-3 {
+            padding-left: 1rem; /* Espacio horizontal entre las tarjetas */
+            padding-right: 1rem;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            height: 100%; /* Hace que la tarjeta use toda la altura disponible en su columna */
+            margin-bottom: 1rem; /* Espacio entre filas de tarjetas */
+            width: 100%; /* Ocupa el ancho completo del contenedor de la columna */
+            max-width: 25rem; /* Ajusta el ancho máximo según sea necesario */
+            box-shadow: 0 0 20px #3b3b3b;
+            border-radius: 10px;
+        }
+
+        .card-body {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+        }
+
+        .card-img-top {
+            width: 90%;
+            height: 350px; /* Ajusta la altura según tus necesidades */
+            object-fit: scale-down; /* Mantiene la proporción y cubre el área del contenedor */
+            align-self: center;
+            
+        }
+
+
+
+        .card-title {
+            margin-bottom: 0; 
+            /* Elimina el margen inferior para alineación */
+        }
+
+        .card-text {
+            margin-top: 0; /* Empuja el texto hacia abajo si hay espacio extra */
+        }
+
+
+
+        .texto-about{
+            font-size: large;
+        }
+
+        .swiper{
+            margin-top: 0;
+            width: 100% !important;
+            padding: 50px 0 50px 0 !important;
+        }
+        .swiper-slide{
+            width: 400px !important;
+            height: 600px !important;
+            background-color: #ffffff;
+            box-shadow: 0 0 20px #3b3b3b;
+            border-radius: 10px;
+            padding: 40px !important;
+            text-align: center !important;
+            margin: 0 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .icons-swiper{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .icons-swiper i{
+            font-size: 20px;
+            color: #000000;
+        }
+
+        .icons-swiper img{
+            width: 100px;
+
+        }
+        .product_content{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+            flex-grow: 1;
+        }
+
+        .product_text{
+            margin-top: 10px;
+            flex-basis: 60%;
+            text-align: left;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .product_text span{
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .product_text h3{
+            margin-top: 5px;
+            font-size: 20px;
+            color: #b11310;
+            font-weight: bold;
+        }
+        
+        .product_text p{
+            margin-top: 15px;
+            font-size: 16px;
+            color: #000000;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 6;
+            -webkit-box-orient: vertical;
+        }
+        
+        .product-img{
+            flex-basis: 40%;
+            text-align: right;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .product-img img{
+            margin-top: 15px;
+            max-height: 200px;
+            width: 150px;
+        }
+
+        .btn-1{
+            display: inline-block;
+            padding: 3px 20px !important;
+            border: 1px solid #b11310;
+            border-radius: 20px;
+            color: #b11310;
+            text-decoration: none;
+        }
+        .swiper-button-prev,
+        .swiper-button-next {
+            color: #b11310; /* Cambia el color del botón */
+            width: 50px; /* Ajusta el tamaño del botón */
+            height: 50px; /* Ajusta el tamaño del botón */
+        }
+
+        .swiper-button-prev::after,
+        .swiper-button-next::after {
+            font-size: 50px; /* Ajusta el tamaño del icono */
+        }
+
+        .swiper-button-prev{
+            left: 10%;
+        }
+
+        .swiper-button-next{
+            right: 10%;
+        }
+
+        .container-contact {
+        display: flex;
+        flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas más pequeñas */
+        justify-content: space-around; /* Ajusta el espacio entre los elementos */
+        padding-bottom: 25px;
+        }
+
+        .map-container, .contact-general {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 20px #3b3b3b;
+            margin-bottom: 20px; /* Espacio entre secciones en pantallas pequeñas */
+        }
+
+.map-container {
+    width: 100%;
+    max-width: 650px; /* Limita el tamaño máximo para evitar que se expanda demasiado en pantallas grandes */
+    flex: 1;
+}
+
+.contact-general {
+    width: 100%;
+    max-width: 800px; /* Limita el tamaño máximo para evitar que se expanda demasiado en pantallas grandes */
+    flex: 1;
+}
+
+.map-container h1, .map-container h3, .contact-text h1 {
+    text-align: center;
+    margin: 0; /* Elimina márgenes innecesarios */
+}
+
+.map_text {
+    padding-bottom: 20px;
+    border-bottom: 3px solid #b11310; /* Línea roja */
+}
+
+.map {
+    padding-top: 20px;
+    padding-left: 4px; /* Espacio entre la línea y el mapa */
+}
+
+.map iframe {
+    position: absolute;
+}
+
+/* Contact Text Container */
+.contact-text-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los íconos se ajusten en pantallas pequeñas */
+    justify-content: space-around; /* Espacio uniforme entre los elementos */
+    gap: 20px;
+}
+
+.contact-text-container i {
+    font-size: 150px;
+    color: #b11310;
+}
+
+.wp-contact, .mail-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los íconos y el texto horizontalmente */
+    text-align: center;
+    color: #b11310;
+    flex: 1;
+}
+
+/* Form Container */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio entre los campos del formulario */
+}
+
+.form-container h1 {
+    text-align: center;
+}
+
+.nombre_completo .col {
+    flex: 1; /* Cada columna ocupa el mismo espacio */
+    margin-right: 10px; /* Espacio entre los campos si es necesario */
+}
+
+.nombre_completo .col:last-child {
+    margin-right: 0; /* Elimina el margen derecho en el último elemento */
+}
+
+.footer-top {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente los hijos en el padre */
+    align-items: center; /* Centra verticalmente los hijos en el padre */
+}
+
+.socialIcons-footer{
+    color: #b11310;
+}
+
+.footer-top .text-footer-top,
+.footer-top .socialIcons-footer{
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos dentro de estos divs */
+}
+
+.footer-top .socialIcons-footer a {
+    margin-right: 15px; /* Espaciado entre íconos */
+}
+
+.footer-top .socialIcons-footer a:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último ícono */
+}
+
+
+        @media (max-width: 780px) {
+            .btn-overlay {
+                font-size: 1.2rem; /* Ajusta el tamaño del texto para pantallas más pequeñas */
+                padding: 10px 20px; /* Ajusta el tamaño del botón para pantallas más pequeñas */
+                top: 70%;
+            }
+            
+            .text-overlay{
+                font-size: 1.5rem;
+                padding: 29px;
+                width: 22rem;
+            }
+            .h1-encabezado{
+                font-size: 2rem;
+            
+            }
+
+            .images-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+                }
+            .images-container img {
+                max-width: 100%;
+                margin-bottom: 20px;
+                position: static;
+               
+            }
+            .container-contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+ 
+
+
+    .map-container, .contact-general {
+        width: 100%; /* Asegúrate de que ocupen el ancho completo en pantallas pequeñas */
+        max-width: none; /* Elimina el límite máximo de ancho */
+    }
+
+    .contact-text-container {
+        flex-direction: column;
+        gap: 10px; /* Reduce el espacio entre los íconos */
+    }
+
+    .nombre_completo .row {
+        flex-direction: column; /* Apila las columnas verticalmente en pantallas pequeñas */
+    }
+    .map {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* Mantiene una relación de aspecto 16:9 */
+    overflow: hidden;
+    border: 0; /* Elimina el borde por si acaso */
+}
+
+.map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+}
+.hvr-radial-in {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+  background: #b11310;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  
+}
+.hvr-radial-in:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #ffffff;
+  border-radius: 100%;
+  -webkit-transform: scale(2);
+  transform: scale(2);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  
+}
+.hvr-radial-in:hover, .hvr-radial-in:focus, .hvr-radial-in:active {
+  color: white;
+  font-weight: bold;
+}
+.hvr-radial-in:hover:before, .hvr-radial-in:focus:before, .hvr-radial-in:active:before {
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+@-webkit-keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@-webkit-keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+.hvr-bob {
+  display: flex;
+  flex-direction: column;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.footer-hvr:hover{
+    color: #b11310;
+    text-decoration: underline;
+}
+.hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
+  -webkit-animation-name: hvr-bob-float, hvr-bob;
+  animation-name: hvr-bob-float, hvr-bob;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+}
+
+@media (min-width: 2100px) {
+    .map-container, .contact-general {
+        max-width: none; /* Elimina el límite máximo de ancho para pantallas grandes */
+    }
+}
+
+
+            
+            
+#loader {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    z-index: 1000;
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 5px solid #b11310;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#content {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; 
+}
+
+.fade-in {
+            opacity: 0;
+            transition: opacity 1s ease-out;
+        }
+.fade-in.visible {
+    opacity: 1;
+    }
+.fade-in-container > * {
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@media (min-width: 781px) and (max-width: 1500px) {
+    /* Botón 'VISITANOS' */
+    .text-overlay {
+        font-size: 3rem;
+        padding: 50px;
+        width: 50rem;
+    }
+
+    .btn-overlay {
+        top: 60%; /* Ajusta la posición vertical para que quede más abajo en pantalla */
+        font-size: 1.5rem; /* Ajusta el tamaño del texto */
+        padding: 30px 20px; /* Ajusta el padding del botón */
+    }
+
+    /* Contenedor de imágenes */
+    .images-container {
+        display: flex;
+        flex-direction: column; /* Mantiene la dirección a columna para que las imágenes queden una debajo de la otra */
+        align-items: center; /* Centra las imágenes horizontalmente */
+        gap: 100px; /* Ajusta el espacio entre las imágenes para reducir la separación */
+        width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    }
+
+    .images-container img {
+        max-width: 100%; /* Asegura que las imágenes no se desborden */
+        width: 80%; /* Ajusta el ancho de las imágenes */
+        height: auto; /* Mantén la proporción de las imágenes */
+    }
+
+    .image-1 {
+            top: 50px; /* Ajustar según sea necesario */
+            left: 25px; /* Ajustar según sea necesario */
+            
+        }
+
+        .image-2 {
+            top: 400px; /* Ajustar según sea necesario */
+            right: 80px; /* Ajustar según sea necesario */
+            
+        }
+
+    /* Contenedor del mapa */
+    .map-container{
+        max-width: none;
+        width: 100%;
+    }
+    .map {
+    position: relative;
+    width: 100%;
+    height: 90%;
+    padding-bottom: 56.25%; /* Mantiene una relación de aspecto 16:9 */
+    overflow: hidden;
+    border: 0; /* Elimina el borde por si acaso */
+}
+
+.map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+}
+
+</style>
+</head>
+<body class="general-background">
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+<div id="content">
+    <header>
+        <!-- Header Top -->
+        <div class="header-top container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 d-flex align-items-center">
+                        <div class="contact-info">
+                            <a href="mailto:info@econorepuestos.com"><i class="fas fa-envelope"></i> info@econorepuestos.com</a>
+                            <a href="tel:+573110924821"><i class="fas fa-phone"></i> +(57) 3110924821</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-end">
+                        <div class="social-icons">
+                            <a href="#" class="fab fa-facebook-f"></a>
+                            <a href="#" class="fab fa-whatsapp"></a>
+                            <a href="#" class="fab fa-instagram"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Header Bottom -->
+        <nav class="header-bottom navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+              <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="images/logo.png" alt="Logo">
+                <span class="ms-2 text-primary fw-bold h1">ECONOREPUESTOS S.A.S</span>
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>              
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link fw-bold" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-bold" href="#about_us">Acerca de Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-bold" href="#products">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-bold" href="#contact">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          
+    </header>
+
+    <div class="container-fluid p-0 fade-in-container">
+            <div class="position-relative">
+                <img src="images/bodega_repuestos.jpg" alt="almacen-motos" class="w-100 full-width-img">
+                <div class="text-overlay h1 text-center text-white fade-in-container">
+                    EMPRESA LIDER EN EL MERCADO DE REPUESTOS DE MOTOCICLETAS
+                </div>
+                <a href="#contact" class="btn btn-overlay btn-primary fw-bold fade-in-container">VISITANOS</a>
+            </div>
+    </div>
+    <div class="container-fluid effect-threed fade-in">
+            <p class="text-center  h1-encabezado fw-bold text-secondary mt-4" id="about_us">SOBRE NOSOTROS</p>
+    </div>
+    <div class=" mt-5 content-rect fade-in">
+        <div class="row ">
+            <div class="col-12 col-md-6">
+                <div class="text-container">
+                    <h2 class="h2 fw-bold text-center">EMPRESA LÍDER EN EL MERCADO NACIONAL DE REPUESTOS PARA MOTOCICLETAS</h2>
+                    <p class="text-secondary  mt-3 texto-about">
+                        En ECONOREPUESTOS SAS, somos una empresa colombiana con más de 20 años de experiencia en el mercado de repuestos para motocicletas. Fundada con el objetivo de ofrecer soluciones de alta calidad para los apasionados de las motocicletas, hemos crecido y evolucionado a lo largo de las décadas, adaptándonos a las demandas cambiantes del mercado. Nuestra amplia gama de productos incluye desde piezas y accesorios esenciales hasta componentes especializados, todos seleccionados para garantizar el mejor rendimiento y durabilidad. En ECONOREPUESTOS SAS, nos enorgullece brindar un servicio al cliente excepcional y soluciones confiables que mantienen a los motociclistas en movimiento. Nuestra dedicación a la excelencia y nuestra pasión por el motociclismo nos han posicionado como un líder en el sector, consolidando nuestra reputación como el socio de confianza en repuestos para motocicletas en Colombia.
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="images-container">
+                    <img src="images/about_1.png" alt="Image 1" class="image-1 img-fluid">
+                    <img src="images/about_2.jpg" alt="Image 2" class="image-2 img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row g-3">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card fade-in">
+                    <img src="images/longevidad.png" class="card-img-top" alt="longevidad">
+                    <div class="card-body">
+                        <h5 class="card-title text-center fw-bold text-primary">20 AÑOS DE EXPERIENCIA</h5>
+                        <p class="card-text text-center">Fundada el 5 de agosto de 2004, estamos posicionados como una prestigiosa empresa en el mercado de repuestos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card fade-in">
+                    <img src="images/cliente.png" class="card-img-top" alt="cliente">
+                    <div class="card-body">
+                        <h5 class="card-title text-center fw-bold text-primary">EXCELENTE ATENCION AL CLIENTE</h5>
+                        <p class="card-text text-center">Contamos con más de 15 colaboradores altamente capacitados dispuestos a brindar la mejor experiencia a nuestros clientes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card fade-in">
+                    <img src="images/marca.png" class="card-img-top" alt="marca">
+                    <div class="card-body">
+                        <h5 class="card-title text-center fw-bold text-primary">AMPLIO CATALOGO DE MARCAS</h5>
+                        <p class="card-text text-center">Tenemos disponibles más de 50 marcas en nuestro catálogo para cumplir con cualquier requerimiento.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card fade-in">
+                    <img src="images/promocion.png" class="card-img-top" alt="promocion">
+                    <div class="card-body">
+                        <h5 class="card-title text-center fw-bold text-primary">PRECIOS INSUPERABLES</h5>
+                        <p class="card-text text-center">Estamos comprometidos en brindar los mejores precios del mercado a nuestros clientes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid effect-threed mt-5 fade-in">
+        <p class="text-center  h1-encabezado fw-bold text-secondary mt-4" id="products">PRODUCTOS</p>
+    </div>
+    <div class="content-rect-products mt-5 fade-in">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="text-container">
+                    <h2 class="h2 fw-bold text-center">EL MEJOR SURTIDO CON EL INVENTARIO MAS GRANDE DEL MERCADO</h2>
+                    <p class="mt-4 texto-about text-secondary">
+                        Al adquirir cualquiera de nuestros productos, nuestros clientes están obteniendo piezas que cumplen con los mismos rigurosos estándares que los equipos originales. En ECONOREPUESTOS SAS, ofrecemos una amplia variedad de repuestos y accesorios, asegurando la disponibilidad de lo que necesitas cuando lo necesitas. Nuestro equipo, altamente capacitado y con vasta experiencia, se dedica a brindar un servicio al cliente excepcional, asesorando y apoyando a cada cliente en cada paso del proceso de compra. Nos enorgullecemos de nuestro extenso inventario y de nuestra capacidad para satisfacer las necesidades del mercado de motocicletas con rapidez y precisión, siempre manteniendo un compromiso inquebrantable con la calidad y la satisfacción del cliente.
+                    </p>
+                    <div class="main-check mt-4">
+                        <div class="check-item">
+                          <i class="fa-solid fa-check check-icon"></i>
+                          <span class="fw-bold">Empresa Líder en Ventas</span>
+                        </div>
+                        <div class="check-item">
+                          <i class="fa-solid fa-check check-icon"></i>
+                          <span class="fw-bold">Variedad de marcas</span>
+                        </div>
+                        <div class="check-item">
+                          <i class="fa-solid fa-check check-icon"></i>
+                          <span class="fw-bold">Alta calidad en repuestos</span>
+                        </div>
+                        <div class="check-item">
+                          <i class="fa-solid fa-check check-icon"></i>
+                          <span class="fw-bold">Excelente atención al cliente</span>
+                        </div>
+                      </div>
+                </div>
+
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="image-product-container">
+                    <img src="images/bodega_productos.jpg" alt="bodega_repuestos" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="swiper mySwiper fade-in">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide hvr-bob" id="kits_arrastre">
+                    <div class="icons-swiper">
+                        <i class="fa-solid fa-circle-arrow-left"></i>
+                        <img src="images/logo.png" alt="logo" class="img-fluid logo-swiper">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="product_content">
+                        <div class="product_text">
+                            <span>Desde $60.000 pesos</span>
+                            <h3>KITS DE ARRASTRE</h3>
+                            <p>Contamos con marcas originales y homolagadas en kits de arrastre como casarella, revo, vitrix, esjot, choho, did y muchas mas. </p>
+                        </div>
+                        <div class="product-img">
+                            <img src="images/kit_arrastre.jpg" alt="kit_arrastre">
+                        </div>
+                    </div>
+                    <a href="https://wa.me/573153334761?text=Hola%20quiero%20más%20información" class="btn-1 hvr-radial-in">COTIZAR</a>
+                </div>
+                <div class="swiper-slide hvr-bob" id="aceites">
+                    <div class="icons-swiper">
+                        <i class="fa-solid fa-circle-arrow-left"></i>
+                        <img src="images/logo.png" alt="logo" class="img-fluid logo-swiper">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="product_content">
+                        <div class="product_text">
+                            <span>Desde $30.000 pesos</span>
+                            <h3>ACEITES Y LUBRICANTES PARA MOTOR</h3>
+                            <p>Tenemos aceites sinteticos, semi-sinteticos y minerales en todo tipo de viscosidad y presentación.</p>
+                        </div>
+                        <div class="product-img">
+                            <img src="images/aceite.webp" alt="kit_arrastre">
+                        </div>
+                    </div>
+                    <a href="https://wa.me/573153334761?text=Hola%20quiero%20más%20información" class="btn-1 hvr-radial-in">COTIZAR</a>
+                </div>
+                <div class="swiper-slide hvr-bob" id="llantas">
+                    <div class="icons-swiper">
+                        <i class="fa-solid fa-circle-arrow-left"></i>
+                        <img src="images/logo.png" alt="logo" class="img-fluid logo-swiper">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="product_content">
+                        <div class="product_text">
+                            <span>Desde $120.000 pesos</span>
+                            <h3>LLANTAS</h3>
+                            <p>Contamos con llantas de todo tipo enduro, street, racing y multiproposito de cualquier compuesto y en cualquier dimension para todo tipo de motocicleta.</p>
+                        </div>
+                        <div class="product-img">
+                            <img src="images/llantas.png" alt="kit_arrastre">
+                        </div>
+                    </div>
+                    <a href="https://wa.me/573153334761?text=Hola%20quiero%20más%20información" class="btn-1 hvr-radial-in">COTIZAR</a>
+                </div>
+                <div class="swiper-slide hvr-bob" id="iluminacion">
+                    <div class="icons-swiper">
+                        <i class="fa-solid fa-circle-arrow-left"></i>
+                        <img src="images/logo.png" alt="logo" class="img-fluid logo-swiper">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="product_content">
+                        <div class="product_text">
+                            <span>Desde $40.000 pesos</span>
+                            <h3>ILUMINACION LED</h3>
+                            <p>Tenemos en nuestro inventario los mejores bombillos y exploradoras LED desde 3000 lumens</p>
+                        </div>
+                        <div class="product-img">
+                            <img src="images/led.jpg" alt="kit_arrastre">
+                        </div>
+                    </div>
+                    <a href="https://wa.me/573153334761?text=Hola%20quiero%20más%20información" class="btn-1 hvr-radial-in">COTIZAR</a>
+                </div>
+                <div class="swiper-slide hvr-bob" id="filtros">
+                    <div class="icons-swiper">
+                        <i class="fa-solid fa-circle-arrow-left"></i>
+                        <img src="images/logo.png" alt="logo" class="img-fluid logo-swiper">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="product_content">
+                        <div class="product_text">
+                            <span>Desde $15.000 pesos</span>
+                            <h3>FILTROS DE AIRE</h3>
+                            <p>Contamos con los filtros de aire mas economicos del mercado, en inventario siempre habra originales y homologados</p>
+                        </div>
+                        <div class="product-img">
+                            <img src="images/filtro_aire.webp" alt="kit_arrastre">
+                        </div>
+                    </div>
+                    <a href="https://wa.me/573153334761?text=Hola%20quiero%20más%20información" class="btn-1 hvr-radial-in">COTIZAR</a>
+                </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+    </div>
+    <div class="container-fluid effect-threed mt-5 fade-in">
+        <p class="text-center  h1-encabezado fw-bold text-secondary mt-4" id="contact">CONTACTANOS</p>
+    </div>
+    <div class="container-fluid container-contact mt-5">
+        <div class="map-container fade-in">
+            <div class="map_text">
+                <h1>DIRECCIÓN</h1>
+                <h3>CALLE 19 #16-31, Cali - Valle del Cauca</h3>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1991.3094586112022!2d-76.52290632368306!3d3.4425054996921975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a6f599c31937%3A0xbde97059f3cb0281!2sCl.%2019%20%231631%2C%20Cali%2C%20Valle%20del%20Cauca!5e0!3m2!1ses-419!2sco!4v1723169884767!5m2!1ses-419!2sco" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="contact-general fade-in">
+            <div class="contact-text">
+                <h1>Si deseas contactarnos para mas información puedes usar alguna las siguientes opciones</h1>
+                    <div class="contact-text-container">
+                        <div class="wp-contact">
+                            <a href="https://wa.me/573153334761?text=Hola%20quiero%20más%20información" target="_blank"><i class="fa-brands fa-whatsapp" ></i></a>
+                            <h3>WHATSAPP</h3>
+                            <p class="text-secondary">Escribenos al 3153334761</p>
+                        </div>
+                        <div class="mail-contact">
+                            <a href="mailto:diegopolo14@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+                            <h3>CORREO ELECTRONICO</h3>
+                            <p class="text-secondary">Escribenos a info@econorepuestos.com</p>
+                        </div>
+                </div>
+            </div>
+            <div class="form-container">
+                <h1>O</h1>
+                <h1 class="fw-bold">Llena el siguiente formulario de contacto</h1>
+                <!-- Mensaje de exito -->
+                <div class="alert alert-success alert-dismissible fade show" role="alert" id="successMessage" style="display: none;">
+                    Tu mensaje ha sido enviado con éxito.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                <!-- Mensaje de error -->
+                <div class="alert alert-danger alert-dismissible fade show" role="alert" id="errorMessage" style="display: none;">
+                    Hubo un error al enviar tu mensaje. Intenta nuevamente.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                <form action="formulario/form.php" method="POST" enctype="multipart/form-data">
+                    <div class="form mt-3">
+                    
+                    <div class="nombre_completo">
+                        <div class="row mb-3">
+                            <div class="col">
+                                <label for="nombre" class="fw-bold">Nombres</label>
+                              <input type="text" class="form-control" placeholder="Pepito" name="nombres" required>
+                            </div>
+                            <div class="col">
+                                <label for="apellidos" class="fw-bold">Apellidos</label>
+                              <input type="text" class="form-control" placeholder="Perez" name="apellidos" required>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="mb-3 form-mail">
+                            <label for="exampleFormControlInput1" class="form-label fw-bold">Correo electronico</label>
+                            <input type="email" class="form-control" id="mailFormControlInput1" placeholder="su-correo-electronico@ejemplo.com" name="correo" required>
+                        </div>
+                        <div class="mb-3 form-phone">
+                            <label for="exampleFormControlInput1" class="form-label fw-bold">Numero celular o telefono</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="(602) 3240312 o 3110987640" name="telefono" required>
+                        </div>
+                        <div class="mb-3 form-message">
+                                <label for="exampleFormControlTextarea1" class="form-label fw-bold">Realice su solicitud</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Quisiera saber si cuentan con XYZ repuesto" name="mensaje" required></textarea>
+                        </div>
+                        <div class="mb-3 form-attachment">
+                            <label for="formFile" class="form-label fw-bold">Adjunta una imagen del producto o repuesto si deseas</label>
+                            <input class="form-control" type="file" id="attachmentformFile" name="adjunto">
+                        </div>
+                </div>
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary fw-bold btn-block">ENVIAR MENSAJE</button>
+                </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+        <!-- Section: Social media -->
+        <section class="footer-top d-flex justify-content-center p-4 border-bottom">
+          <!-- Left -->
+          <div class="me-5 d-none d-lg-block text-footer-top">
+            <span>Mantente al dia con nuestras redes sociales</span>
+          </div>
+          <!-- Left -->
+      
+          <!-- Right -->
+          <div class="socialIcons-footer">
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+          <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+      
+        <!-- Section: Links  -->
+        <section class="">
+          <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  <i class="fas fa-gem me-3 text-primary"></i>ECONOREPUESTOS S.A.S
+                </h6>
+                <p>
+                    Empresa lider en el mercado nacional de repuestos de motocicletas, con mas de 20 años de experiencia.
+                </p>
+              </div>
+              <!-- Grid column -->
+      
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Productos
+                </h6>
+                <p class="footer-hvr">
+                  <a href="#llantas" class="text-reset">Llantas</a>
+                </p>
+                <p class="footer-hvr">
+                  <a href="#filtros" class="text-reset">Filtros de Aire</a>
+                </p>
+                <p class="footer-hvr">
+                  <a href="#kits_arrastre" class="text-reset">Kits de Arrastre</a>
+                </p>
+                <p class="footer-hvr">
+                  <a href="#iluminacion" class="text-reset">Iluminacion LED</a>
+                </p>
+                <p class="footer-hvr">
+                    <a href="#aceites" class="text-reset">Aceites</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+      
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Secciones
+                </h6>
+                <p class="footer-hvr">
+                  <a href="index.html" class="text-reset">Inicio</a>
+                </p>
+                <p class="footer-hvr">
+                  <a href="#about_us" class="text-reset">Acerca de nosotros</a>
+                </p>
+                <p class="footer-hvr">
+                  <a href="#products" class="text-reset">Productos</a>
+                </p>
+                <p class="footer-hvr">
+                  <a href="#contact" class="text-reset">Contacto</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+      
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+                <p><i class="fas fa-home me-3"></i> Calle 19 #16-31, Cali-Valle del Cauca</p>
+                <p>
+                  <i class="fas fa-envelope me-3"></i>
+                  info@econorepuestos.com
+                </p>
+                <p><i class="fas fa-phone me-3"></i> +(57) 3110924821</p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+          © 2024 Copyright:
+          <a class="text-reset fw-bold" href="https://mdbootstrap.com/">mixterixdev.com</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    
+    <script>
+        // Código para ocultar el loader y mostrar el contenido
+        window.addEventListener('load', function() {
+            var loader = document.getElementById('loader');
+            var content = document.getElementById('content');
+            loader.style.display = 'none';
+            content.style.display = 'block';
+            content.style.opacity = '1'; // Hacer que el contenido sea visible
+
+            // Añadir la clase visible al div con transición
+            var transicionDiv = document.querySelector('.transicion-div');
+            if (transicionDiv) {
+                transicionDiv.classList.add('visible');
+            }
+        });
+
+        // Inicialización de Swiper
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            loop: true,
+            coverflowEffect: {
+                depth: 500,
+                modifier: 1,
+                slidesShadows: true,
+                rotate: 0,
+                stretch: 0,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+
+<script>
+    // Código para aplicar la transición de fade-in
+    document.addEventListener('DOMContentLoaded', function() {
+        const fadeIns = document.querySelectorAll('.fade-in');
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observerCallback = (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        };
+
+        const observer = new IntersectionObserver(observerCallback, observerOptions);
+        fadeIns.forEach(fadeIn => {
+            observer.observe(fadeIn);
+        });
+    });
+</script>
+<script>
+    // Código para manejar el formulario con AJAX
+    $(document).ready(function() {
+        $('form').on('submit', function(e) {
+            e.preventDefault(); // Evita que el formulario se envíe de forma tradicional
+
+            var formData = new FormData(this);
+
+            $.ajax({
+                url: 'formulario/form.php',
+                type: 'POST',
+                data: formData,
+                processData: false,
+                contentType: false,
+                dataType: 'json', // Espera una respuesta JSON
+                success: function(response) {
+                    if (response.status === 'success') {
+                        $('#successMessage').show();
+                    } else {
+                        $('#errorMessage').show();
+                    }
+                },
+                error: function() {
+                    $('#errorMessage').show();
+                }
+            });
+        });
+    });
+</script>
+</body>
+</html>
